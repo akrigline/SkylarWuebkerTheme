@@ -34,7 +34,6 @@ $('.sidr').on( 'click', 'a.sidr-class-filter', function() {
 
 $(document).ready(function() {
 	$(".fancybox")
-		.attr('rel', 'gallery')
 		.fancybox({
 			beforeLoad: function() {
 	            var el, id = $(this.element).data('title-id');
@@ -49,6 +48,8 @@ $(document).ready(function() {
 	        },
 			closeClick : true,
 			openEffect : 'fade',
+			nextEffect: 'fade',
+			prevEffect: 'fade',
 			helpers : {
 				title : {
 					type : 'inside'

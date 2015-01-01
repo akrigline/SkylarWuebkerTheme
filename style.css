@@ -85,8 +85,9 @@ nav a:hover {
 	-moz-transition:color .2s ease-out, background .2s ease-in;
 	-webkit-transition:color .2s ease-out, background .2s ease-in;
 }
-nav a:active {
+nav a:active, nav a:focus {
 	color:#39C;
+	text-decoration: none;
 }
 
 article {

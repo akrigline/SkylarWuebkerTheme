@@ -18,7 +18,7 @@
 ?>
 
 <li class="tile <?php echo trim($classes, $separator); ?>">
-	<a href="<?php echo $thumb[0]; ?>" title="Open Project in Lightbox" rel="<?php echo $post->post_name;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
+	<a href="<?php echo $thumb[0]; ?>" title="Open Project in Lightbox" rel="<?php echo $postID;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
 		<img src="<?php echo $thumb[0]; ?>" alt="">
 	</a>
 	
@@ -28,29 +28,21 @@
 	</div>
 
 	<?php
-		$thumb_ID = get_post_thumbnail_id( $post->ID );
-		if ( $images = get_posts(array(
-			'post_parent' => $post->ID,
+
+		$images = get_children(array(
+			'exclude' => get_post_thumbnail_id(),
+			'post_parent' => $postID,
 			'post_type' => 'attachment',
-			'numberposts' => -1,
-			'post_mime_type' => 'image',
-			'exclude' => $thumb_ID,)))
-		{
-			foreach( $images as $image ) {
+			'numberposts' => -1 ));
+		
+		foreach( $images as $image ) {
 				$attachmenturl = wp_get_attachment_url( $image->ID );
 				$attachmentimage = wp_get_attachment_image_src( $image->ID, thumbnail );
 				$attachmentalt = wp_get_attachment_image( $image->ID, 'alt' );
 
-				echo '<a href="' . $attachmenturl . '" rel="' . $post->post_name . '" class="fancybox sr-only" data-title-id="' . $postID . '"><img src="' . $attachmentimage[0] . 'alt="' . $attachmentalt . '"></a>';
+				echo '<a href="' . $attachmenturl . '" rel="' . $postID . '" class="fancybox sr-only" data-title-id="' . $postID . '"><img src="' . $attachmentimage[0] . '" alt="' . $attachmentalt . '"></a>';
 
 				}
-			} else {
-		}
-
 	?>
 	
 </li>
-
-<?php
-
-?>
