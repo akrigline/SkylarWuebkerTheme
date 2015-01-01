@@ -6,7 +6,7 @@
 
 <?php 
 	$postID = get_the_ID();
-	$args = array( 'child_of' => 3 )
+	$args = array( 'child_of' => 3 );
 	$categories = get_categories ( $args );
 ?>
 
@@ -37,8 +37,7 @@
 				echo '<a href="' . $attachmenturl . '" rel="' . $post->post_name . '" class="fancybox sr-only" data-title-id="' . $postID . '"><img src="' . $attachmentimage[0] . 'alt="' . $attachmentalt . '"></a>';
 
 				}
-			}
-		} else {
+			} else {
 		}
 
 	?>
