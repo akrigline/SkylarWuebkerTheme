@@ -38,7 +38,7 @@
 
     <!-- STANDARD NAVIGATION -->
     <nav id="nav" class="col-sm-3 hidden-xs">
-        <div class="logo"><img src="<?php bloginfo('template_directory');?>/photos/logo.png"></div>
+        <div class="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory');?>/photos/logo.png"></a></div>
         <ul class="filters">
             <li><a class="filter" href="<?php bloginfo('url'); ?>" data-filter="*">HOME</a></li>
             <li><a class="filter" href="#identity" data-filter=".identity">IDENTITY</li></a> 

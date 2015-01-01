@@ -10,6 +10,7 @@ get_header(); ?>
 
 <section id="main" class="content col-xs-12">
 	<div class="window row">
+	<?php query_posts( array ( 'category_slug' => 'work' ) ); ?>
 		<?php if ( have_posts() ) : ?>
 			<ul class="items list-unstyled">
 

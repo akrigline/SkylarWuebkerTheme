@@ -6,13 +6,20 @@
 
 <?php 
 	$postID = get_the_ID();
-	$args = array( 'child_of' => 3 );
-	$categories = get_categories ( $args );
+	$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+	$categories = get_the_category();
+	$separator = ' ';
+	$classes = '';
+	if($categories){
+	   foreach($categories as $category) {
+	      $classes .= $category->cat_name.$separator;
+	   }
+	}
 ?>
 
-<li class="tile <?php echo $categories; ?>">
-	<a href="<?php the_post_thumbnail('full'); ?>" title="Open Project in Lightbox" rel="<?php echo $post->post_name;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
-		<img src="<?php the_post_thumbnail(); ?>" alt="<?php the_post_thumbnail('alt');?>">
+<li class="tile <?php echo trim($classes, $separator); ?>">
+	<a href="<?php echo $thumb[0]; ?>" title="Open Project in Lightbox" rel="<?php echo $post->post_name;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
+		<img src="<?php echo $thumb[0]; ?>" alt="">
 	</a>
 	
 	<div id="<?php echo $postID; ?>" class="sr-only">
@@ -43,3 +50,7 @@
 	?>
 	
 </li>
+
+<?php
+
+?>
