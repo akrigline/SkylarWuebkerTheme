@@ -5,8 +5,9 @@
 ?>
 
 <?php 
-	$postID = get_the_ID(); 
-	$categories = get_categories ( 'child_of' => 3 );
+	$postID = get_the_ID();
+	$args = array( 'child_of' => 3 )
+	$categories = get_categories ( $args );
 ?>
 
 <li class="tile <?php echo $categories; ?>">
