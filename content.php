@@ -9,8 +9,6 @@
 	$categories = get_categories ( 'child_of' => 3 );
 ?>
 
-
-
 <li class="tile <?php echo $categories; ?>">
 	<a href="<?php the_post_thumbnail('full'); ?>" title="Open Project in Lightbox" rel="<?php echo $post->post_name;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
 		<img src="<?php the_post_thumbnail(); ?>" alt="<?php the_post_thumbnail('alt');?>">
