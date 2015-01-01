@@ -4,35 +4,48 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+<?php $postID = get_the_ID(); ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php skylarwuebker2_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+<li class="tile web">
+	<a href="photos/tiles/crystal_tile.png" title="Open Project in Lightbox" rel="<?php echo $post->post_name;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
+		<img src="photos/tiles/crystal_tile.png" alt="">
+	</a>
+	
+	<div id="<?php echo $postID; ?>" class="sr-only">
+		<h1><?php the_title();?></h1>
+		<p><?php the_content(); ?></p>
+	</div>
 
-	<div class="entry-content">
-		<?php
-			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'skylarwuebker2' ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
+	<a href="photos/tiles/crystal_tile.png" rel="<?php echo $post->post_name;?>" class="fancybox sr-only" data-title-id="<?php echo $postID; ?>">
+		<img src="photos/tiles/crystal_tile.png" alt="">
+	</a>
+	
+</li>
 
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'skylarwuebker2' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php skylarwuebker2_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+<?php
+
+$thumb_ID = get_post_thumbnail_id( $post->ID );
+
+if ( $images = get_posts(array(
+	'post_parent' => $post->ID,
+	'post_type' => 'attachment',
+	'numberposts' => -1,
+	'post_mime_type' => 'image',
+	'exclude' => $thumb_ID,)))
+{
+	foreach( $images as $image ) {
+		$attachmenturl = wp_get_attachment_url( $image->ID );
+		$attachmentimage = wp_get_attachment_image_src( $image->ID, full );
+		$imageDescription = apply_filters( 'the_description' , $image->post_content );
+		$imageTitle = apply_filters( 'the_title' , $image->post_title );
+
+		if (!empty($imageDescription)) {
+			echo '<a href="'.$imageDescription .'"><img src="' . $attachmentimage[0] . '" alt=""  /></a>';
+		} else { echo '<img src="' . $attachmentimage[0] . '" alt="" />'; }
+	}
+} else {
+	echo "No Image";
+}
+
+?>

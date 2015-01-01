@@ -9,6 +9,19 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><?php bloginfo('title'); ?></title>
+    <meta name="description" content="<?php bloginfo('description'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/jquery.fancybox.css" media="screen">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/jquery.sidr.light.css" media="screen">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/bootstrap.min.css" media="screen">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -18,19 +31,46 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'skylarwuebker2' ); ?></a>
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'skylarwuebker2' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    <!-- STANDARD NAVIGATION -->
+    <nav id="nav" class="col-sm-3 hidden-xs">
+        <div class="logo"><img src="photos/logo.png"></div>
+        <ul class="filters">
+            <li><a class="filter" href="#" data-filter="*">HOME</a></li>
+            <li><a class="filter" href="#identity" data-filter=".identity">IDENTITY</li></a> 
+            <li><a class="filter" href="#web" data-filter=".web">WEB</a></li>
+            <li><a class="filter" href="#print" data-filter=".print">PRINT</a></li>
+            <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('Contact'))); ?>">CONTACT</a></li>
+            <li><a href="photos/SkylarResume.pdf">RESUME</a></li>
+        </ul>
+        <article>&copy; Skylar Wuebker 2014</article>
+    </nav>
 
-	<div id="content" class="site-content">
+    <!-- MOBILE NAVIGATION TRIGGER -->
+    <aside id="button" class="sidebar-small pull-left">
+            <ul class="list-unstyled filters">
+                <li><a id="menu-btn" href="#mobile-nav"><img src="photos/button.png"></a></li>
+                <li><a class="filter" href="#identity" data-filter=".identity"><img src="photos/identity_icon.png"></a></li>
+                <li><a class="filter" href="#web" data-filter=".web"><img src="photos/web_icon.png"></a></li>
+                <li><a class="filter" href="#print" data-filter=".print"><img src="photos/print_icon.png"></a></li>
+                <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('Contact'))); ?>"><img src="photos/contact_icon.png"></a></li>
+                <li><a href="photos/SkylarResume.pdf"><img src="photos/resume_icon.png"></a></li>
+            </ul>
+    </aside>
+
+    <!-- MOBILE NAVIGATION -->
+    <nav id="mobile-nav">
+        <div class="logo"><a id="menu-btn" class="filter" href="#" data-filter="*"><img src="photos/mobile_logo.png"></div>
+        <ul class="filters">
+            <li><a class="filter" href="#identity" data-filter=".identity">IDENTITY</li></a> 
+            <li><a class="filter" href="#web" data-filter=".web">WEB</a></li>
+            <li><a class="filter" href="#print" data-filter=".print">PRINT</a></li>
+            <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('Contact'))); ?>">CONTACT</a></li>
+            <li><a href="photos/SkylarResume.pdf">RESUME</a></li>
+        </ul>
+        <article>&copy; Skylar Wuebker 2014</article>
+    </nav>
