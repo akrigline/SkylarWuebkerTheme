@@ -17,7 +17,7 @@
 	
 	<div id="<?php echo $postID; ?>" class="sr-only">
 		<h1><?php the_title();?></h1>
-		<p><?php the_content(); ?></p>
+		<p><?php the_excerpt(); ?></p>
 	</div>
 
 	<?php

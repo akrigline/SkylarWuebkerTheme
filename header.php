@@ -36,12 +36,11 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
     <!-- STANDARD NAVIGATION -->
     <nav id="nav" class="col-sm-3 hidden-xs">
         <div class="logo"><img src="photos/logo.png"></div>
         <ul class="filters">
-            <li><a class="filter" href="#" data-filter="*">HOME</a></li>
+            <li><a class="filter" href="<?php bloginfo('url'); ?>" data-filter="*">HOME</a></li>
             <li><a class="filter" href="#identity" data-filter=".identity">IDENTITY</li></a> 
             <li><a class="filter" href="#web" data-filter=".web">WEB</a></li>
             <li><a class="filter" href="#print" data-filter=".print">PRINT</a></li>
@@ -65,7 +64,7 @@
 
     <!-- MOBILE NAVIGATION -->
     <nav id="mobile-nav">
-        <div class="logo"><a id="menu-btn" class="filter" href="#" data-filter="*"><img src="photos/mobile_logo.png"></div>
+        <div class="logo"><a id="menu-btn" class="filter" href="<?php bloginfo('url'); ?>" data-filter="*"><img src="photos/mobile_logo.png"></div>
         <ul class="filters">
             <li><a class="filter" href="#identity" data-filter=".identity">IDENTITY</li></a> 
             <li><a class="filter" href="#web" data-filter=".web">WEB</a></li>
