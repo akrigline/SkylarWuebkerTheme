@@ -47,9 +47,10 @@ $(document).ready(function() {
 	            }
 	        },
 			closeClick : true,
+			loop : 'false',
 			openEffect : 'fade',
-			nextEffect: 'fade',
-			prevEffect: 'fade',
+			nextEffect : 'fade',
+			prevEffect : 'fade',
 			helpers : {
 				title : {
 					type : 'inside'

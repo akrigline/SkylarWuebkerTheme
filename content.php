@@ -18,18 +18,7 @@
 ?>
 
 <li class="tile <?php echo trim($classes, $separator); ?>">
-	<a href="<?php echo $thumb[0]; ?>" title="Open Project in Lightbox" rel="<?php echo $postID;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
-		<img src="<?php echo $thumb[0]; ?>" alt="">
-	</a>
-	
-	<div id="<?php echo $postID; ?>" class="sr-only">
-		<h1><?php the_title();?></h1>
-		<p><?php the_excerpt(); ?></p>
-	</div>
-
-	<?php
-
-		$images = get_children(array(
+	<?php   $images = get_children(array(
 			'exclude' => get_post_thumbnail_id(),
 			'post_parent' => $postID,
 			'post_type' => 'attachment',
@@ -44,5 +33,13 @@
 
 				}
 	?>
+	<a href="<?php echo $attachmenturl; ?>" title="Open Project in Lightbox" rel="<?php echo $postID;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
+		<img src="<?php echo $thumb[0]; ?>" alt="">
+	</a>
+	
+	<div id="<?php echo $postID; ?>" class="sr-only">
+		<h1><?php the_title();?></h1>
+		<p><?php the_excerpt(); ?></p>
+	</div>
 	
 </li>
