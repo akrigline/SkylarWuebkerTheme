@@ -23,20 +23,26 @@
 			'post_parent' => $postID,
 			'post_type' => 'attachment',
 			'numberposts' => -1 ));
-		
-		foreach( $images as $image ) {
-				$attachmenturl = wp_get_attachment_url( $image->ID );
-				$attachmentimage = wp_get_attachment_image_src( $image->ID, thumbnail );
-				$attachmentalt = wp_get_attachment_image( $image->ID, 'alt' );
+
+		$last_key = end($images);
+		foreach ($images as $image) {
+			$attachmenturl = wp_get_attachment_url( $image->ID );
+			$attachmentimage = wp_get_attachment_image_src( $image->ID, thumbnail );
+			$attachmentalt = wp_get_attachment_image( $image->ID, 'alt' );
+		    if ($image == $last_key) { ?>
+
+				<a href="<?php echo $attachmenturl; ?>" title="Open Project in Lightbox" rel="<?php echo $postID;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
+					<img src="<?php echo $thumb[0]; ?>" alt="">
+				</a>
+
+			<?php } else {
 
 				echo '<a href="' . $attachmenturl . '" rel="' . $postID . '" class="fancybox sr-only" data-title-id="' . $postID . '"><img src="' . $attachmentimage[0] . '" alt="' . $attachmentalt . '"></a>';
+		    
+		    }
+		}
 
-				}
 	?>
-	<a href="<?php echo $attachmenturl; ?>" title="Open Project in Lightbox" rel="<?php echo $postID;?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
-		<img src="<?php echo $thumb[0]; ?>" alt="">
-	</a>
-	
 	<div id="<?php echo $postID; ?>" class="sr-only">
 		<h1><?php the_title();?></h1>
 		<p><?php the_excerpt(); ?></p>
