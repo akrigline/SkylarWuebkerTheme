@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/jquery.sidr.light.css" media="screen">
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/bootstrap.min.css" media="screen">
 
-    <script src="<?php bloginfo('template_directory');?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@
             <li><a class="filter" href="#web" data-filter=".web">WEB</a></li>
             <li><a class="filter" href="#print" data-filter=".print">PRINT</a></li>
             <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('Contact'))); ?>">CONTACT</a></li>
-            <li><a href="photos/SkylarResume.pdf">RESUME</a></li>
+            <li><a href="<?php bloginfo('template_directory');?>/photos/SkylarResume.pdf"l target="_blank">RESUME</a></li>
         </ul>
         <article>&copy; Skylar Wuebker 2014</article>
     </nav>
@@ -60,7 +60,7 @@
                 <li><a class="filter" href="#web" data-filter=".web"><img src="<?php bloginfo('template_directory');?>/photos/web_icon.png"></a></li>
                 <li><a class="filter" href="#print" data-filter=".print"><img src="<?php bloginfo('template_directory');?>/photos/print_icon.png"></a></li>
                 <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('Contact'))); ?>"><img src="<?php bloginfo('template_directory');?>/photos/contact_icon.png"></a></li>
-                <li><a href="photos/SkylarResume.pdf"><img src="<?php bloginfo('template_directory');?>/photos/resume_icon.png"></a></li>
+                <li><a href="<?php bloginfo('template_directory');?>/photos/SkylarResume.pdf" target="_blank"><img src="<?php bloginfo('template_directory');?>/photos/resume_icon.png"></a></li>
             </ul>
     </aside>
 
@@ -72,7 +72,7 @@
             <li><a class="filter" href="#web" data-filter=".web">WEB</a></li>
             <li><a class="filter" href="#print" data-filter=".print">PRINT</a></li>
             <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('Contact'))); ?>">CONTACT</a></li>
-            <li><a href="photos/SkylarResume.pdf">RESUME</a></li>
+            <li><a href="<?php bloginfo('template_directory');?>/photos/SkylarResume.pdf" target="_blank">RESUME</a></li>
         </ul>
         <article>&copy; Skylar Wuebker 2014</article>
     </nav>

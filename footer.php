@@ -13,7 +13,6 @@
     <script>window.jQuery || document.write('<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
     <script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/js/vendor/imagesloaded.pkgd.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/vendor/isotope.pkgd.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.sidr.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.touchwipe.min.js"></script>

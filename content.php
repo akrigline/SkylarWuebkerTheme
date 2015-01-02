@@ -32,7 +32,7 @@
 			$attachmentalt = wp_get_attachment_image( $image->ID, 'alt' );
 		    if ($image == $last_key) { ?>
 
-				<a href="<?php echo $attachmenturl; ?>" title="Open Project in Lightbox" rel="<?php echo $postID; ?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
+				<a href="<?php echo $attachmenturl; ?>" rel="<?php echo $postID; ?>" class="fancybox fancy-image" data-title-id="<?php echo $postID; ?>">
 					<img src="<?php echo $thumb[0]; ?>" alt="">
 				</a>
 

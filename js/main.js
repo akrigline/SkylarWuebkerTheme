@@ -18,20 +18,18 @@ if ($(window).width() < 768) {
 	});
 };
 
-var $container = $('.items').imagesLoaded( function() {
-  $container.isotope({
-    itemselector: 'li'
-  });
+var $container = $('.items').isotope({
+	itemselector: 'li'
+});
 
-  $('.filters').on( 'click', 'a.filter', function() {
+$('.filters').on( 'click', 'a.filter', function() {
 	var filterValue = $(this).attr('data-filter');
 	$container.isotope({ filter: filterValue });
-  });
+});
 
-  $('.sidr').on( 'click', 'a.sidr-class-filter', function() {
+$('.sidr').on( 'click', 'a.sidr-class-filter', function() {
 	var filterValue = $(this).attr('data-filter');
 	$container.isotope({ filter: filterValue });
-  });
 });
 
 $(document).ready(function() {

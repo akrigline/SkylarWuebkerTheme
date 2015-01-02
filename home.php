@@ -9,7 +9,7 @@ get_header(); ?>
 
 
 <section id="main" class="content col-xs-12">
-	<div class="window row">
+	<div class="window">
 	<?php query_posts( array ( 'category_name' => 'work', 'posts_per_page' => -1 ) ); ?>
 		<?php if ( have_posts() ) : ?>
 			<ul class="items list-unstyled">
