@@ -10,7 +10,7 @@ get_header(); ?>
 
 <section id="main" class="content col-xs-12">
 	<div class="window row">
-	<?php query_posts( array ( 'category_slug' => 'work' ) ); ?>
+	<?php query_posts( array ( 'category_name' => 'work', 'posts_per_page' => -1 ) ); ?>
 		<?php if ( have_posts() ) : ?>
 			<ul class="items list-unstyled">
 
@@ -28,6 +28,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+		<?php wp_reset_query(); ?>
 	</div>
 </section>
 

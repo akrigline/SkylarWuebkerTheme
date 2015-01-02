@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/jquery.sidr.light.css" media="screen">
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/bootstrap.min.css" media="screen">
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
