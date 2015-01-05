@@ -111,11 +111,19 @@ article {
 	max-width:100%;
 }
 
+.sidr{
+	background:#fff;
+}
+
 /* Contact Page */
 
 h1 {
 	color: #39C;
 	font-size: 3.8em;
+}
+
+h2 {
+	color:#39C;
 }
 
 #about {
@@ -209,12 +217,16 @@ textarea {
 @media only screen and (max-width: 767px){
 	#button {
 		display: block;
+		box-shadow:3px 3px 10px rgba(0,0,0,0.3);
+		height:100%;
 	}
 }
 
 #mobile-nav{
 	display:none;
 	background:#fff;
+
+	box-shadow:3px 3px 10px rgba(0,0,0,0.3);
 }
 
 /* Media Queries */
@@ -241,9 +253,9 @@ textarea {
 	}
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
 	#main{
-		padding-left:90px;
+		padding-left:85px;
 	}
 }
 
