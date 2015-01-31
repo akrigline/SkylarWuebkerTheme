@@ -29,7 +29,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700|Numans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <style>
         #button {
             display: none;
@@ -49,7 +49,7 @@
     </style>
     <?php wp_head(); ?>
 </head>
-<body<?php body_class(); ?>>
+<body <?php body_class(); ?>>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
@@ -63,7 +63,7 @@
                     <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('Contact'))); ?>">CONTACT</a></li>
                     <li><a target=blank href="<?php bloginfo('template_directory');?>/photos/SkylarResume.pdf">RESUME</a></li>
                 </ul>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </nav>
 
             <!-- MOBILE NAVIGATION TRIGGER -->
@@ -80,4 +80,4 @@
                     <li><a href="<?php bloginfo('template_directory');?>/photos/SkylarResume.pdf">RESUME</a></li>
                 </ul>
             </nav>
-<? } ?>
+            <? } ?>
