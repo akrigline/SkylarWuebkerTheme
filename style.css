@@ -58,7 +58,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    	margin:5px;
 	margin-right:25px;
 	float:right;
-	background-image:url(../photos/button-white.png);
+	background-image:url(photos/button-white.png);
 	background-size:cover;
 	
    }
@@ -139,7 +139,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 
 	.blur {
 	height:100%;
-	background:url(../photos/sky-blur.jpg) fixed;
+	background:url(photos/sky-blur.jpg) fixed;
 	padding:0;	
 	}
 	
@@ -253,7 +253,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    .window {
 	   width:100%;
 	   min-height:100%;
-	   background: url(../photos/sky-blur.jpg) fixed;
+	   background: url(photos/sky-blur.jpg) fixed;
 	   background-size:cover;
    }
    .list-unstyled {
@@ -264,7 +264,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    .welcome {
 	 height:100%;
 	 width:100%;
-	 background: url(../photos/sky.jpg) fixed;
+	 background: url(photos/sky.jpg) fixed;
 	 background-size:cover;  
    }
    
@@ -299,7 +299,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 	 height:660px;
 	 overflow:hidden;
 	 float:right;
-	 background-image:url(../photos/face.png);
+	 background-image:url(photos/face.png);
 	 background-size: cover;
 	 background-repeat: no-repeat; 
 	 background-position:center;
@@ -323,7 +323,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    
    .location{
 	 width:100%;
-	 background:url(../photos/dayton.png) fixed;
+	 background:url(photos/dayton.png) fixed;
 	 background-position:center;
 	 background-size:cover;
 	 background-repeat:no-repeat;  
@@ -356,7 +356,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    	width: 33%;
    	float:left;
    	overflow:hidden;
-   	background-image:url(../photos/background.png);
+   	background-image:url(photos/background.png);
    	background-position:center;
    	background-size:100%;
     position:relative;
@@ -457,13 +457,13 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 	width:50px;
 	height:50px;
 	background-size:cover;
-	background-image:url(../photos/facebook.png);
+	background-image:url(photos/facebook.png);
 	display:inline-block;
 	text-align:center;
 }
 
 	.facebook:hover {
-	background-image:url(../photos/facebook_hover.png);
+	background-image:url(photos/facebook_hover.png);
 	-o-transition:color .2s ease-out, background .2s ease-in;
    	-ms-transition:color .2s ease-out, background .2s ease-in;
    	-moz-transition:color .2s ease-out, background .2s ease-in;
@@ -474,13 +474,13 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 		width:50px;
 		height:50px;
 		background-size:cover;
-		background-image:url(../photos/linkedin.png);
+		background-image:url(photos/linkedin.png);
 		display:inline-block;
 		text-align:center;
 	}
 
 	.linkedin:hover {
-	background-image:url(../photos/linkedin_hover.png);
+	background-image:url(photos/linkedin_hover.png);
 	-o-transition:color .2s ease-out, background .2s ease-in;
    	-ms-transition:color .2s ease-out, background .2s ease-in;
    	-moz-transition:color .2s ease-out, background .2s ease-in;
@@ -490,14 +490,14 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 	.designsperation {
 	width:50px;
 	height:50px;
-	background-image:url(../photos/designsperation.png);
+	background-image:url(photos/designsperation.png);
 	background-size: cover;
 	display:inline-block;
 	text-align:center;
 }
 
 	.designsperation:hover {
-	background-image:url(../photos/designsperation-hover.png);
+	background-image:url(photos/designsperation-hover.png);
 	-o-transition:color .2s ease-out, background .2s ease-in;
    	-ms-transition:color .2s ease-out, background .2s ease-in;
    	-moz-transition:color .2s ease-out, background .2s ease-in;
@@ -508,13 +508,13 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 	width:50px;
 	height:50px;
 	background-size:cover;
-	background-image:url(../photos/github.png);
+	background-image:url(photos/github.png);
 	display:inline-block;
 	text-align:center;
 	}
 
 	.github:hover {
-	background-image:url(../photos/github_hover.png);
+	background-image:url(photos/github_hover.png);
 	-o-transition:color .2s ease-out, background .2s ease-in;
    	-ms-transition:color .2s ease-out, background .2s ease-in;
    	-moz-transition:color .2s ease-out, background .2s ease-in;
