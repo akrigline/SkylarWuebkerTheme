@@ -74,7 +74,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    	list-style:none;
    	font-family:Arial, Helvetica, sans-serif;
    	font-size:18px;
-		margin-top:-40px;
+	margin-top:-40px;
    	padding: 10px;
    }
    nav li:active {
@@ -119,6 +119,14 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    .sidr-class-logo img{
    	max-width:100%;
    }
+   .menu-btn {
+	width:50px;
+	height:50px;
+   	margin:5px;
+	margin-right:25px;
+	background-image:url(photos/button-white.png);
+	background-size:cover;
+   }
 
    /* Contact Page */
 
@@ -151,96 +159,7 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
    #contact {
    height:350px;  
    }
-/* Yoko */
-.input__field--yoko {
-	z-index: 10;
-	width: 100%;
-	background: transparent;
-	color: #f5f5f5;
-   	height:4em;
-	//opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-   border:none;
-}
 
-.input__label--yoko {
-	position: relative;
-	width: 100%;
-	color: #FFF;
-	text-align: left;
-	margin-top:15px;
-}
-
-.input__label--yoko::before {
-	content: '';
-	position: absolute;
-	top:-5em;
-	left: 0;
-	width: 100%;
-	height: 4em;
-	background: transparent;
-	border: 3px solid #FFF;
-	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
-	transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
-	-webkit-transform-origin: 50% 100%;
-	transform-origin: 50% 100%;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.input__label--yoko::after {
-	content:'';
-	position: absolute;
-	top: -1.2em;
-	left: 0;
-	bottom:2em;
-	width: 100%;
-	height: 0.25em;
-	background: transparent;
-	border: 2px solid #FFF;
-	-webkit-transform-origin: 50% 0%;
-	transform-origin: 50% 0%;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.input input--message {
-	float:right;
-	height:8em;
-}
-
-.input__label-content--yoko {
-	padding: 1.75em 0;
-	font-family: 'Open Sans' san-sarif;
-}
-
-.input__field--yoko:focus,
-.input--filled .input__field--yoko {
-	opacity: 1;
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s;
-   outline:none;
-}
-
-.input__field--yoko:focus + .input__label--yoko::before,
-.input--filled .input__label--yoko::before {
-	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
-	transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
-}
-
-.input__field--yoko:focus + .input__label--yoko,
-.input--filled .input__label--yoko {
-	pointer-events: none;
-}
-
-.input__field--yoko:focus + .input__label--yoko::after,
-.input--filled .input__label--yoko::after {
-	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
-	transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
-}
-
-   
    /* Main Window */
 
    #main {
@@ -252,7 +171,6 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 
    .window {
 	   width:100%;
-	   min-height:100%;
 	   background: url(photos/sky-blur.jpg) fixed;
 	   background-size:cover;
    }
@@ -557,7 +475,6 @@ SkylarWuebker2 is based on Underscores http://underscores.me/, (C) 2012-2015 Aut
 	/* footer */
 	
 	.footer {
-		height:60px;
 		width:100%;
 		background-color: #333;
 		color:#CCC;
