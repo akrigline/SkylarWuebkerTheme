@@ -8,25 +8,23 @@
  */
 ?>
 
-<div class="clearfix"></div>
-<div class="footer"><article> &copy; Skylar Wuebker 2015</div>
 </section><!-- #main -->
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="<?php bloginfo('template_directory'); ?>js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 <script src="http://joncontino.com/wp-content/themes/salient/js/imagesLoaded.min.js?ver=3.1.1"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/isotope.pkgd.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/jquery.sidr.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/jquery.touchwipe.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/jquery.fancybox.pack.js"></script>
-<script src="j<?php bloginfo('template_directory'); ?>s/vendor/jquery.scrollTo.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/jquery.localScroll.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/skrollr.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>js/vendor/appear.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/vendor/isotope.pkgd.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.sidr.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.touchwipe.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.fancybox.pack.js"></script>
+<!--<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.scrollTo.min.js"></script>-->
+<!--<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.localScroll.min.js"></script>-->
+<!-- <script src="<?php bloginfo('template_directory'); ?>/js/vendor/skrollr.js"></script> -->
+<script src="<?php bloginfo('template_directory'); ?>/js/vendor/appear.js"></script>
 
-<script src="<?php bloginfo('template_directory'); ?>js/main.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

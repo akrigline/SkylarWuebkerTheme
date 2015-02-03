@@ -41,6 +41,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	<div class="clearfix"></div>
+	<div class="footer"><article> &copy; Skylar Wuebker 2015</div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

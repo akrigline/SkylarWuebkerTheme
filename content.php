@@ -45,7 +45,7 @@
 
 	?>
 	<div id="<?php echo $postID; ?>" class="sr-only">
-		<h2><?php the_title();?></h2>
+		<strong><?php the_title();?></strong>
 		<p><?php the_excerpt(); ?></p>
 	</div>
 	
