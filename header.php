@@ -54,6 +54,10 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
+<<<<<<< HEAD
+=======
+            <?php if ( is_page('home') ) { ?>
+>>>>>>> FETCH_HEAD
             <!-- STANDARD NAVIGATION -->
             <nav class="nav">
                 <a href="index.php"><div class="logo"></div></a>
@@ -79,4 +83,9 @@
                     <li><a href="<?php echo esc_url( get_permalink( get_page_by_title('contact'))); ?>">CONTACT</a></li>
                     <li><a href="<?php bloginfo('template_directory');?>/photos/SkylarResume.pdf">RESUME</a></li>
                 </ul>
+<<<<<<< HEAD
             </nav>
+=======
+            </nav>
+            <? } ?>
+>>>>>>> FETCH_HEAD
